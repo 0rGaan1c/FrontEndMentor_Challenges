@@ -1,0 +1,29 @@
+// _ signifies it is a partials scss file
+
+html {
+  font-size: 100%;
+  // doesn't add the padding to the actual width if we use this property
+  // for example: if a element width is 400px and we add a padding of 20px it will become 420px
+  // which kinda make things weird, so that's why we can use box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// inherit the box-sizing property in all the elements
+// * is a wild card by which we can use to add properties to all elements
+// ::before, ::after are pseudo-elements
+// they're sort of like ghost elements that don't exist in HTML but exist for each element and you can target with CSS.
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $darkCyan;
+  font-family: "Kumbh Sans", sans-serif;
+
+  background-image: url("../../images/bg-pattern-top.svg"),
+    url("../../images/bg-pattern-bottom.svg");
+  background-position: -50% -470px, 170% 430px;
+  background-repeat: no-repeat;
+}

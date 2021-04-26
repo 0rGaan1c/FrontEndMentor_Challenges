@@ -1,0 +1,98 @@
+.main {
+  background-color: white;
+  max-width: 20.625rem;
+  min-height: 23.125rem;
+  margin-top: 9.25rem;
+  margin-bottom: 9.0625rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4%;
+  background-image: url("../../images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+
+  @include breakpoint-up(large) {
+    margin-top: 10.625rem;
+    max-width: 21.75rem;
+    min-height: 23.4375rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    margin-top: 5.375rem;
+    margin-left: 6.75rem;
+    margin-right: 6.75rem;
+    border-radius: 50%;
+    border: 5px solid white;
+
+    @include breakpoint-up(large) {
+      margin-left: 7.625rem;
+      margin-right: 7.625rem;
+    }
+  }
+
+  &__info {
+    margin-top: 1.25rem;
+    margin-left: 5.875rem;
+    margin-right: 5.875rem;
+    color: $veryDeBlue;
+    font-weight: 700;
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      margin-left: 6.75rem;
+      margin-right: 6.75rem;
+    }
+
+    span {
+      color: $darkGrayishBlue;
+      margin-left: 0.5rem;
+      font-weight: 400;
+
+      @include breakpoint-up(large) {
+        margin-left: 0;
+      }
+    }
+
+    p {
+      font-size: 0.75rem;
+      text-align: center;
+      font-weight: 400;
+      color: $darkGrayishBlue;
+      margin-top: 0.9375rem;
+      margin-bottom: 0;
+    }
+  }
+
+  hr {
+    margin-top: 1.625rem;
+    margin-bottom: 1.625rem;
+    background-color: $darkGray;
+    opacity: 0.5;
+    height: 0;
+  }
+
+  &__stats {
+    color: $veryDeBlue;
+    font-weight: 700;
+    display: flex;
+    margin-bottom: 1.625rem;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 1.5rem;
+    }
+
+    div {
+      flex: 1;
+      text-align: center;
+      p {
+        margin-top: 0.75rem;
+        font-weight: 400;
+        text-align: center;
+        color: $darkGrayishBlue;
+        font-size: 0.625rem;
+        letter-spacing: 0.1px;
+      }
+    }
+  }
+}
