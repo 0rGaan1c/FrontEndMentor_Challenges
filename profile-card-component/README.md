@@ -1,5 +1,4 @@
-# ProfileCardComponent-FrontEndMentor
-
 * Made this to imporve my css skills.
 
-Challenge Link: https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ
+[Demo](https://profile-card-component-front-end-mentor-organic-042.vercel.app/)
+[ChallengeLink](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
