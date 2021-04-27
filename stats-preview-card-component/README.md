@@ -40,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@0rGaan1c](https://www.frontendmentor.io/profile/0rGaan1c)
+- Frontend Mentor - [@0rGaan1c](https://www.frontendmentor.io/profile/organic-042)
 - Twitter - [@0rGaan1c](https://www.twitter.com/0rGaan1c)
