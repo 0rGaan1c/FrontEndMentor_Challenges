@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/0rGaan1c/FrontEndMentor_Challenges/blob/main/stats-preview-card-component/)
-- Live Site URL: [Add live site URL here](https://statscardcomponent.netlify.app/)
+- [Solution URL](https://github.com/0rGaan1c/FrontEndMentor_Challenges/blob/main/stats-preview-card-component/)
+- [Live Site URL](https://statscardcomponent.netlify.app/)
 
 ### Built with
 
