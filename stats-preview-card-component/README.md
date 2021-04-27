@@ -36,7 +36,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- SCSS
+- SASS
 
 ## Author
 
