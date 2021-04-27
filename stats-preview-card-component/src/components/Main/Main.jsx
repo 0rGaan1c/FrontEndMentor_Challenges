@@ -1,29 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styles from "./Main.module.scss";
 
-import MobileImage from "../../images/image-header-mobile.jpg";
-import DesktopImage from "../../images/image-header-desktop.jpg";
-
 const Main = () => {
-  const [dimensions, setDimensions] = useState(getWindowDimensions());
-
-  function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height,
-    };
-  }
-  useEffect(() => {
-    function handleResize() {
-      setDimensions(getWindowDimensions);
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  });
-
   return (
     <section className={styles.main}>
       <div className={styles.content}>
