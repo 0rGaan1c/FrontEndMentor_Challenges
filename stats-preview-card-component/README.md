@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/0rGaan1c/FrontEndMentor_Challenges/edit/main/stats-preview-card-component/desktop.jpg)
+![alt text](https://github.com/0rGaan1c/FrontEndMentor_Challenges/edit/main/stats-preview-card-component/desktop.png)
 
 ### Links
 
