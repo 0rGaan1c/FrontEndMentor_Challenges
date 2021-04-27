@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./desktop.jpg)
+![](https://github.com/0rGaan1c/FrontEndMentor_Challenges/edit/main/stats-preview-card-component/desktop.jpg)
 
 ### Links
 
