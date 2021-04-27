@@ -38,9 +38,7 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - SCSS
 
-```
 ## Author
 
 - Frontend Mentor - [@0rGaan1c](https://www.frontendmentor.io/profile/0rGaan1c)
 - Twitter - [@0rGaan1c](https://www.twitter.com/0rGaan1c)
-```
