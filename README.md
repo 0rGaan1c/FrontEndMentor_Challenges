@@ -1,2 +1,2 @@
 # FrontEndMentor_Challenges
-Doing Front End Mentor challenges to improve my CSS skills.
+Doing Front End Mentor challenges to improve my CSS skill.
