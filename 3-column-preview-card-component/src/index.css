@@ -1,0 +1,12 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heading {
+  @apply my-9 text-4xl font-big uppercase text-white text-opacity-75;
+}
+
+.button {
+  @apply w-36 h-12 bg-white mt-7 flex justify-center items-center rounded-3xl font-lexend;
+}
