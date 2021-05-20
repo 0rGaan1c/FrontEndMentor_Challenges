@@ -24,8 +24,11 @@ Users should be able to:
 ### Screenshot
 
 - Desktop
+
 ![alt text](./desktop.png)
+
 - Mobile
+
 ![alt text](./mobile.png)
 
 ### Links
