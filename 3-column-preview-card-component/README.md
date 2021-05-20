@@ -23,9 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
--Desktop
+- Desktop
 ![alt text](./desktop.png)
--Mobile
+- Mobile
 ![alt text](./mobile.png)
 
 ### Links
