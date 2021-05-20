@@ -3,6 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      borderWidth: ["hover", "focus"],
       fontFamily: {
         big: ["Big Shoulders Display", "cursive"],
         lexend: ["Lexend Deca", "sans-serif"],

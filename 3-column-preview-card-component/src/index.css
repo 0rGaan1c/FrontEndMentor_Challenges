@@ -8,5 +8,5 @@
 }
 
 .button {
-  @apply w-36 h-12 bg-white mt-7 flex justify-center items-center rounded-3xl font-lexend;
+  @apply w-36 h-12 bg-white mt-7 flex justify-center items-center cursor-pointer rounded-3xl font-lexend md:mt-24 hover:bg-transparent hover:border-white border-2;
 }
