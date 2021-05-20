@@ -27,9 +27,6 @@ Users should be able to:
 
 ![alt text](./desktop.png)
 
-- Mobile
-
-![alt text](./mobile.png)
 
 ### Links
 
