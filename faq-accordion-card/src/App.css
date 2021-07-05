@@ -97,6 +97,8 @@ h3 {
 .app__faq__answer {
   margin-top: 0;
   color: var(--darkGrayishBlue);
+  animation-duration: 0.5s;
+  animation-name: fadeIn;
 }
 
 .app__faq > hr {

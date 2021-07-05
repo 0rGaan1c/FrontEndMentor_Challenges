@@ -41,7 +41,12 @@ const App = () => {
                   <h3 className={isOpen[id] ? `app__faq__question--bold` : ""}>
                     {question}
                   </h3>
-                  <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="10"
+                    height="7"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ transform: isOpen[id] ? "rotate(180deg)" : "" }}
+                  >
                     <path
                       d="M1 .799l4 4 4-4"
                       stroke="#F47B56"
@@ -51,14 +56,7 @@ const App = () => {
                     />
                   </svg>
                 </div>
-                {isOpen[id] && (
-                  <h3
-                    className="app__faq__answer"
-                    className={`${isOpen[id] ? "open" : "close"}`}
-                  >
-                    {answer}
-                  </h3>
-                )}
+                {isOpen[id] && <h3 className="app__faq__answer">{answer}</h3>}
                 <hr />
               </div>
             );
