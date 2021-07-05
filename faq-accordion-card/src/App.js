@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { faqs } from "./faqs";
 
@@ -8,6 +8,18 @@ import { faqs } from "./faqs";
 // </div>
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(new Array(faqs.length).fill(false));
+
+  const handleClick = (idx) => {
+    const newState = new Array(faqs.length).fill(false);
+    // const newState = isOpen.map((val) => {
+    //   return val;
+    // });
+    newState[idx] = !isOpen[idx];
+    setIsOpen(newState);
+    console.log(isOpen);
+  };
+
   return (
     <>
       <div className="app">
@@ -17,25 +29,37 @@ const App = () => {
         </div>
         <h1>FAQ</h1>
         <div className="app__faq__container">
-          {faqs.map((faq, idx) => {
+          {faqs.map((faq) => {
             const { id, question, answer } = faq;
 
             return (
-              <div className="app__faq" key={idx}>
-                <div className="app__faq__question">
-                  <h3>{question}</h3>
+              <div className="app__faq" key={id}>
+                <div
+                  className="app__faq__question"
+                  onClick={() => handleClick(id)}
+                >
+                  <h3 className={isOpen[id] ? `app__faq__question--bold` : ""}>
+                    {question}
+                  </h3>
                   <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M1 .799l4 4 4-4"
                       stroke="#F47B56"
-                      stroke-width="2"
+                      strokeWidth="2"
                       fill="none"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                     />
                   </svg>
                 </div>
-                <h3 className="app__faq__answer">{answer}</h3>
-                <div className="app__faq__border"></div>
+                {isOpen[id] && (
+                  <h3
+                    className="app__faq__answer"
+                    className={`${isOpen[id] ? "open" : "close"}`}
+                  >
+                    {answer}
+                  </h3>
+                )}
+                <hr />
               </div>
             );
           })}
