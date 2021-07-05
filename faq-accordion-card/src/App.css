@@ -1,0 +1,67 @@
+:root {
+  --varyDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --softRed: hsl(14, 88%, 65%);
+  --softViolet: hsl(273, 75%, 66%);
+  --softBlue: hsl(240, 73%, 65%);
+  --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --darkGrayishBlue: hsl(240, 6%, 50%);
+  --lightGrayishBlue: hsl(240, 5%, 91%);
+  --kumbhSans: "Kumbh Sans", sans-serif;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(var(--softViolet), var(--softBlue));
+}
+
+.app {
+  width: 95%;
+  margin: 146px auto;
+  background-color: white;
+  font-family: var(--kumbhSans);
+  border-radius: 26px;
+}
+
+.app > h1 {
+  font-weight: 700;
+  margin: 36px 0;
+  text-align: center;
+}
+
+.app__img {
+  width: 84%;
+  height: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  bottom: 108px;
+}
+
+.app__img__woman {
+  width: 100%;
+  height: 186px;
+  background-repeat: no-repeat;
+  background-image: url("./images/illustration-woman-online-mobile.svg");
+}
+
+.app_img_pattern {
+  width: 100%;
+  height: 124px;
+  position: relative;
+  bottom: 80px;
+  left: 25px;
+  background-repeat: no-repeat;
+  background-image: url("./images/bg-pattern-mobile.svg");
+}
