@@ -27,8 +27,8 @@ const App = () => {
           <div className="app__img__woman"></div>
           <div className="app__img__pattern"></div>
         </div>
-        <h1>FAQ</h1>
         <div className="app__faq__container">
+          <h1>FAQ</h1>
           {faqs.map((faq) => {
             const { id, question, answer } = faq;
 
