@@ -101,6 +101,8 @@ body {
 }
 
 .container__reviews__review > p {
+  margin-top: 30px;
+  margin-bottom: 0;
   color: var(--white);
   line-height: 1.5;
 }
