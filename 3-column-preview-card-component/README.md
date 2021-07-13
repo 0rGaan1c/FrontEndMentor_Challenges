@@ -29,7 +29,7 @@ Users should be able to:
 
 - Mobile
 
-~[mobile design](./mobile.png)
+![mobile design](./mobile.png)
 
 
 ### Links
