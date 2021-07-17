@@ -24,16 +24,17 @@ Users should be able to:
 ### Screenshot
 
 - Desktop
-![desktop screenshot](./desktop.png)
+
+  ![desktop screenshot](./desktop.png)
 
 - Mobile
 
-![alt text](./mobile.png)
+  ![alt text](./mobile.png)
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://github.com/0rGaan1c/FrontEndMentor_Challenges/tree/main/article-preview-component)
+- [Live Site URL](https://previewcomponent.netlify.app/)
 
 ### Built with
 
