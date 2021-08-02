@@ -27,6 +27,10 @@ Users should be able to:
 
 ![alt text](./mobile.png)
 
+- Desktop
+
+![Desktop Screnshot](./desktop.png)
+
 ### Links
 
 - [Solution URL](https://github.com/0rGaan1c/FrontEndMentor_Challenges/tree/main/social-proof-section)
