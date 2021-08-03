@@ -1,0 +1,65 @@
+:root {
+  /* primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* accent */
+  --blue: hsl(248, 32%, 49%);
+
+  /* neutral */
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+
+  /* font */
+  --poppins: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--poppins);
+  background-image: url("./images/bg-intro-mobile.png");
+  background-color: var(--red);
+}
+
+.main {
+  width: 90%;
+  margin: 96px auto;
+}
+
+.left {
+  text-align: center;
+  color: white;
+  margin-bottom: 68px;
+}
+
+.right .price {
+  background-color: var(--blue);
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px 0;
+  box-shadow: 0 10px rgba(62, 60, 73, 0.3);
+  margin-bottom: 20px;
+}
+
+.right .price > div {
+  width: 60%;
+  margin: auto;
+  color: var(--grayishBlue);
+}
+
+.right .price > div > span {
+  color: white;
+  font-weight: 600;
+}
