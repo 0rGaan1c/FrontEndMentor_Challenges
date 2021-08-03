@@ -50,11 +50,20 @@
         </div>
         <div class="form">
           <form>
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-            <input type="email" placeholder="Email Address" />
-            <input type="password" placeholder="Password" />
-            <div class="btn">CLAIM YOUR FREE TRAIL</div>
+            <input id="firstName" type="text" placeholder="First Name" />
+            <p class="no-error error-firstName">First Name cannot be empty</p>
+
+            <input id="lastName" type="text" placeholder="Last Name" />
+            <p class="no-error error-lastName">Last Name cannot be empty</p>
+
+            <input id="email" type="email" placeholder="Email Address" />
+            <p class="no-error error-email">Email cannot be empty</p>
+            <p class="no-error error-bad-email">Looks like this is not an email</p>
+
+            <input id="password" type="password" placeholder="Password" />
+            <p class="no-error error-password">Password cannot be empty</p>
+
+            <div id="btn" class="btn">CLAIM YOUR FREE TRAIL</div>
           </form>
           <p class="t-s">
             By clicking the button, you are agreeing to our
@@ -72,5 +81,6 @@
         <a href="https://github.com/0rGaan1c" target="_blank">0rGaan1c</a>.
       </p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
