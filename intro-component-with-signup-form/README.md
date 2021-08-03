@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://github.com/0rGaan1c/FrontEndMentor_Challenges/tree/main/intro-component-with-signup-form)
+- [Live Site URL](https://intro-component-with-signup-form-organic.netlify.app/)
 
 ### Built with
 
