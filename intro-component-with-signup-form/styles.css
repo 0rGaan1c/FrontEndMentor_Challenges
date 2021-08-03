@@ -41,7 +41,7 @@ body {
 .left {
   text-align: center;
   color: white;
-  margin-bottom: 68px;
+  margin-bottom: 40px;
 }
 
 .right .price {
@@ -50,7 +50,7 @@ body {
   border-radius: 8px;
   padding: 16px 0;
   box-shadow: 0 10px rgba(62, 60, 73, 0.3);
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .right .price > div {
@@ -61,5 +61,68 @@ body {
 
 .right .price > div > span {
   color: white;
+  font-weight: 600;
+}
+
+.right .form {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 10px rgba(62, 60, 73, 0.3);
+}
+
+.right .form form {
+  width: 80%;
+  margin: auto;
+  padding: 24px 0 12px;
+}
+
+.right .form form input {
+  font-family: var(--poppins);
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(62, 60, 73, 0.3);
+  color: var(--darkBlue);
+  font-weight: 600;
+}
+
+.right .form form input:focus {
+  outline: none !important;
+  border: 1px solid var(--grayishBlue);
+}
+
+.right .form form > div {
+  color: white;
+  text-align: center;
+  letter-spacing: 1.2px;
+  background-color: var(--green);
+  padding: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px rgba(41, 171, 114, 1);
+}
+
+.right .form form > div:hover {
+  background-color: rgba(60, 205, 142, 0.6);
+}
+
+.right .form > p {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 12px;
+  color: var(--grayishBlue);
+}
+
+.right .form > p > span {
+  color: var(--red);
+  font-weight: 600;
+}
+
+::placeholder {
+  color: rgba(62, 60, 63, 0.7);
+  opacity: 1;
   font-weight: 600;
 }
