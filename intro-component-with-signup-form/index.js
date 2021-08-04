@@ -2,20 +2,25 @@ const submitBtn = document.querySelector("#btn");
 
 function handleError(field, className) {
   const errorParagraph = document.querySelector(className);
+  const tmpPlaceholder = field.placeholder;
   errorParagraph.classList.remove("no-error");
   errorParagraph.classList.add("error");
 
   field.style.border = "2px solid hsl(0, 100%, 74%)";
+  field.style.background = "url(./images/icon-error.svg) 95% center no-repeat";
+  field.placeholder = "";
 
   if (className === ".error-bad-email") {
     field.style.color = "hsl(0, 100%, 74%)";
   }
 
-  setTimeout(() => {
+  setTimeout(async () => {
     errorParagraph.classList.remove("error");
     errorParagraph.classList.add("no-error");
     field.style.border = "1px solid rgba(62, 60, 73, 0.3)";
     field.style.color = "hsl(249, 10%, 26%)";
+    field.style.background = "none";
+    field.placeholder = tmpPlaceholder;
   }, 3000);
 }
 
