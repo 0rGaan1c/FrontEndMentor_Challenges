@@ -1,0 +1,224 @@
+:root {
+  /* primary */
+  --softRed: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  /* graphic design text */
+  --darkDesaturatedCyan: hsl(167, 40%, 24%);
+  /* photography text */
+  --darkBlue: hsl(198, 62%, 26%);
+  /* footer */
+  --darkModerateCyan: hsl(168, 34%, 41%);
+
+  /* neutral */
+  --veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+  --veryDarkGrayishBlue: hsl(213, 9%, 39%);
+  --darkGrayishBlue: hsl(232, 10%, 55%);
+  --grayishBlue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  /* font size=18px*/
+  --fraunces: "Fraunces", serif;
+  --barlow: "Barlow", sans-serif;
+}
+
+html {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  min-height: 30rem;
+  /* width: 100%; */
+  background-image: url("./images/mobile/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+header nav > ul {
+  display: none;
+}
+
+header > h1 {
+  color: var(--white);
+  text-align: center;
+  font-family: var(--fraunces);
+  letter-spacing: 4px;
+  margin-top: 74px;
+  margin-bottom: 48px;
+}
+
+@keyframes arrow-updown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-45px);
+  }
+}
+
+header .arrow-down-img {
+  text-align: center;
+  animation: arrow-updown 2s ease-in-out infinite both;
+}
+
+.info {
+  text-align: center;
+}
+
+.info article > img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.info article > h2 {
+  font-family: var(--fraunces);
+  font-weight: 900;
+  width: 80%;
+  margin: 60px auto 26px auto;
+}
+
+.info article > p {
+  font-family: var(--barlow);
+  color: var(--darkGrayishBlue);
+  width: 85%;
+  margin: auto;
+}
+
+.learn-more {
+  font-family: var(--fraunces);
+  margin: 30px auto 0 auto;
+  text-transform: uppercase;
+}
+
+.egg-underline {
+  width: 40%;
+  margin: -10px auto 48px auto;
+  border-top: 14px solid hsla(51, 88%, 66%, 0.35);
+  border-radius: 10px;
+}
+
+.stand-out-underline {
+  width: 40%;
+  margin: -10px auto 48px auto;
+  border-top: 14px solid hsla(7, 99%, 70%, 0.35);
+  border-radius: 10px;
+}
+
+.features article div > h3 {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: var(--fraunces);
+  font-weight: 900;
+}
+
+.features article div > p {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  font-family: var(--barlow);
+}
+
+.features .graphic {
+  background-image: url("./images/mobile/image-graphic-design.jpg");
+  min-height: 30rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--darkDesaturatedCyan);
+  position: relative;
+}
+
+.features .graphic > div {
+  position: absolute;
+  top: 65%;
+}
+
+.features .photography {
+  background-image: url("./images/mobile/image-photography.jpg");
+  min-height: 30rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--darkBlue);
+  position: relative;
+}
+
+.features .photography > div {
+  position: absolute;
+  top: 65%;
+}
+
+.testimonials {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.testimonials > h4 {
+  font-family: var(--fraunces);
+  text-transform: uppercase;
+  margin-top: 52px;
+  margin-bottom: 52px;
+  color: var(--grayishBlue);
+  letter-spacing: 3px;
+}
+
+.testimonials > article {
+  margin-bottom: 52px;
+}
+
+.testimonials article > img {
+  border-radius: 50%;
+}
+
+.testimonials .testimony {
+  margin-top: 28px;
+  margin-bottom: 32px;
+  font-family: var(--barlow);
+  color: var(--darkGrayishBlue);
+}
+
+.testimonials article .name {
+  font-family: var(--fraunces);
+  color: var(--veryDarkDesaturatedBlue);
+  margin-bottom: 0;
+}
+
+.testimonials article .job {
+  font-family: var(--barlow);
+  color: var(--grayishBlue);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.photos div {
+  display: flex;
+}
+
+.photos div > img {
+  max-width: 50%;
+  object-fit: cover;
+}
