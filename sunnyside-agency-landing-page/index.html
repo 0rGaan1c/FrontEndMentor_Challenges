@@ -1,71 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        margin-top: 20px;
-        font-size: 12px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img src="images/logo.svg" />
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-        <img src="images/icon-hamburger.svg" />
-      </nav>
-      <h1>WE ARE CREATIVES</h1>
-      <div class="arrow-down-img">
-        <img src="images/icon-arrow-down.svg" />
-      </div>
-    </header>
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-    <section class="info">
-      <article class="egg">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-bottom: 8px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.svg" />
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li class="contact">Contact</li>
+      </ul>
+      <img class="img-hamburger" src="images/icon-hamburger.svg" />
+    </nav>
+    <h1>WE ARE CREATIVES</h1>
+    <div class="arrow-down-img">
+      <img src="images/icon-arrow-down.svg" />
+    </div>
+  </header>
+
+  <section class="info">
+    <article class="egg">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="/images/desktop/image-transform.jpg">
         <img src="images/mobile/image-transform.jpg" alt="" />
+      </picture>
+      <div class="egg-content">
         <h2>Transform your brand</h2>
         <p>
           We are a full-service creative agency specializing in helping brands
           grow fast. Engage your clients through compelling visuals that do most
-          of the marketing for you. 
-          <div class="learn-more egg-learn-more">Learn more</div>
-          <div class="egg-underline"></div>
-          <div class="border-bottom"></div>
+          of the marketing for you.
+        <div class="learn-more egg-learn-more">Learn more</div>
+        <div class="egg-underline"></div>
+        <div class="border-bottom"></div>
         </p>
-      </article>
-      <article class="stand-out">
+      </div>
+    </article>
+    <article class="stand-out">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="/images/desktop/image-stand-out.jpg">
         <img src="images/mobile/image-stand-out.jpg" alt="" />
+      </picture>
+      <div class="stand-out-content">
         <h2>Stand out to the right audience</h2>
         <p>
           Using a collaborative formula of designers, researchers,
@@ -74,92 +81,105 @@
         <div class="learn-more stand-out-learn-more">Learn more</div>
         <div class="stand-out-underline"></div>
         </p>
-      </article>
-    </section>
+      </div>
+    </article>
+  </section>
 
-    <section class="features">
-      <article class="graphic">
-        <div class="graphic-text">
-          <h3>Graphic Design</h3>
-          <p>
-            Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients’ attention.
-          </p>
-        </div>
-      </article>
-      <article class="photography">
-        <div class="photography-text">
-          <h3>Photography</h3>
-          <p>
-            Increase your credibility by getting the most stunning,
-            high-quality photos that improve your business image.
-          </p>
-        </div>
-      </article>
-    </section>
+  <section class="features">
+    <article class="graphic">
+      <div class="graphic-text">
+        <h3>Graphic Design</h3>
+        <p>
+          Great design makes you memorable. We deliver artwork that
+          underscores your brand message and captures potential clients’ attention.
+        </p>
+      </div>
+    </article>
+    <article class="photography">
+      <div class="photography-text">
+        <h3>Photography</h3>
+        <p>
+          Increase your credibility by getting the most stunning,
+          high-quality photos that improve your business image.
+        </p>
+      </div>
+    </article>
+  </section>
 
-    <section class="testimonials">
-      <h4>Client testimonials</h4>
-      <article class="emily">
-        <img src="images/image-emily.jpg" alt="" />
-        <p class="testimony"> We put our trust in Sunnyside and they delivered, making sure our needs were
-          met and deadlines were always hit.
-        </p>
-        <p class="name">Emily R.</p>
-        <p class="job">Marketing Director</p>
-      </article>
-      <article class="thomas">
-        <img src="images/image-thomas.jpg" alt="" />
-        <p class="testimony"> 
-          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
-          satisfying and enjoyable experience.
-        </p>
-        <p class="name">Thomas S.</p>
-        <p class="job">Chief Operating Officer</p>
-      </article>
-      <article class="jennie">
-        <img src="images/image-jennie.jpg" alt="" />
-        <p class="testimony"> 
-          Incredible end result! Our sales increased over 400% when we worked with
-          Sunnyside. Highly recommended!
-        </p>
-        <p class="name">Jennie F.</p>
-        <p class="job">Business Owner</p>
-      </article>
-    </section>
+  <h4>Client testimonials</h4>
+  <section class="testimonials">
+    <article class="emily">
+      <img src="images/image-emily.jpg" alt="" />
+      <p class="testimony"> We put our trust in Sunnyside and they delivered, making sure our needs were
+        met and deadlines were always hit.
+      </p>
+      <p class="name">Emily R.</p>
+      <p class="job">Marketing Director</p>
+    </article>
+    <article class="thomas">
+      <img src="images/image-thomas.jpg" alt="" />
+      <p class="testimony">
+        Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+        satisfying and enjoyable experience.
+      </p>
+      <p class="name">Thomas S.</p>
+      <p class="job">Chief Operating Officer</p>
+    </article>
+    <article class="jennie">
+      <img src="images/image-jennie.jpg" alt="" />
+      <p class="testimony">
+        Incredible end result! Our sales increased over 400% when we worked with
+        Sunnyside. Highly recommended!
+      </p>
+      <p class="name">Jennie F.</p>
+      <p class="job">Business Owner</p>
+    </article>
+  </section>
 
-    <section class="photos">
-      <div class="upper">
+  <section class="photos">
+    <div class="upper">
+      <picture>
+        <source media="(min-width: 1028px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
         <img src="images/mobile/image-gallery-milkbottles.jpg" alt="" />
+      </picture>
+      <picture>
+        <source media="(min-width: 1028px)" srcset="images/desktop/image-gallery-orange.jpg">
         <img src="images/mobile/image-gallery-orange.jpg" alt="" />
-      </div>
-      <div class="lower">          
-        <img src="images/mobile/image-gallery-cone.jpg" alt="" />
-        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="" />
-      </div>
-    </section>
-
-    <footer>        
-      <img src="images/logo-footer.svg" alt="" />
-      <div class="footer-links">
-        <div>About</div>
-        <div>Services</div>
-        <div>Projects</div>
-      </div>
-      <div class="socials">
-        <div><img src="images/icon-facebook.svg" alt="" /></div>
-        <div><img src="images/icon-instagram.svg" alt="" /></div>
-        <div><img src="images/icon-twitter.svg" alt="" /></div>
-        <div><img src="images/icon-pinterest.svg" alt="" /></div>
-      </div>
-    </footer>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/0rGaan1c">0rGaan1c</a>.
+      </picture>
     </div>
-    <script src="index.js"></script>
-  </body>
+    <div class="lower">
+      <picture>
+        <source media="(min-width: 1028px)" srcset="images/desktop/image-gallery-cone.jpg">
+        <img src="images/mobile/image-gallery-cone.jpg" alt="" />
+      </picture>
+      <picture>
+        <source media="(min-width: 1028px)" srcset="images/desktop/image-gallery-sugarcubes.jpg">
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="" />
+      </picture>
+    </div>
+  </section>
+
+  <footer>
+    <img src="images/logo-footer.svg" alt="" />
+    <div class="footer-links">
+      <div>About</div>
+      <div>Services</div>
+      <div>Projects</div>
+    </div>
+    <div class="socials">
+      <div><img src="images/icon-facebook.svg" alt="" /></div>
+      <div><img src="images/icon-instagram.svg" alt="" /></div>
+      <div><img src="images/icon-twitter.svg" alt="" /></div>
+      <div><img src="images/icon-pinterest.svg" alt="" /></div>
+    </div>
+  </footer>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="https://github.com/0rGaan1c">0rGaan1c</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
