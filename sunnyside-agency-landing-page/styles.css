@@ -257,12 +257,22 @@ footer .footer-links {
   color: var(--darkModerateCyan);
 }
 
+footer .footer-links div:hover {
+  cursor: pointer;
+  color: white;
+}
+
 footer .socials {
   width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 60px;
+}
+
+footer .socials div > svg:hover path {
+  cursor: pointer;
+  fill: white;
 }
 
 @media only screen and (min-width: 1024px) {
