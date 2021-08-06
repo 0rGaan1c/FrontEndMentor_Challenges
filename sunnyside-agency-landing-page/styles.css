@@ -82,6 +82,39 @@ header .arrow-down-img {
   animation: arrow-updown 2s ease-in-out infinite both;
 }
 
+.hide-menu {
+  display: none;
+  position: relative;
+}
+
+.show-menu {
+  position: absolute;
+  z-index: 100;
+  background-color: white;
+  list-style-type: none;
+  width: 90%;
+  margin: auto;
+  left: 5%;
+  font-family: var(--barlow);
+  text-align: center;
+  color: var(--darkGrayishBlue);
+  padding: 32px 0;
+}
+
+.show-menu > li {
+  padding: 10px;
+}
+
+.show-menu .contact {
+  background-color: var(--yellow);
+  width: 40%;
+  margin: auto;
+  border-radius: 30px;
+  font-family: var(--fraunces);
+  color: black;
+  margin-top: 14px;
+}
+
 .info {
   text-align: center;
 }
