@@ -11,7 +11,6 @@ This is a solution to the [Intro component with sign-up form](https://www.fronte
 - [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
