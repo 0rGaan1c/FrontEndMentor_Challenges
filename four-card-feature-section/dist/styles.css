@@ -22,6 +22,12 @@ body {
   margin: 60px auto;
 }
 
+@media (min-width: 64em) {
+  .main {
+    width: 86%;
+  }
+}
+
 .main__cta {
   text-align: center;
   color: #4c4e61;
@@ -30,6 +36,15 @@ body {
 .main__cta h1 {
   font-weight: 200;
   font-size: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .main__cta h1 {
+    width: 40%;
+    margin: auto;
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
 }
 
 .main__cta h1 span {
@@ -42,8 +57,34 @@ body {
   font-weight: 400;
 }
 
+@media (min-width: 64em) {
+  .main__cta p {
+    width: 40%;
+    margin: auto;
+  }
+}
+
 .features {
   margin: 60px auto 0 auto;
+}
+
+@media (min-width: 64em) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__columns {
+    width: 30%;
+  }
 }
 
 .features article {
@@ -59,10 +100,22 @@ body {
   margin: 0 auto 34px auto;
 }
 
+@media (min-width: 64em) {
+  .features__content {
+    width: 80%;
+  }
+}
+
 .features__img {
   width: 90%;
   margin: auto;
   text-align: right;
+}
+
+@media (min-width: 64em) {
+  .features__img {
+    width: 80%;
+  }
 }
 
 .features__content > h3 {
