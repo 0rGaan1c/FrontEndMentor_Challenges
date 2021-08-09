@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/0rGaan1c/FrontEndMentor_Challenges/tree/main/four-card-feature-section)
-- [Live Site URL](https://sunnyside-agency-landing-page-organic.netlify.app/)
+- [Live Site URL](https://four-card-feature-section-organic.netlify.app/)
 
 ## My process
 
