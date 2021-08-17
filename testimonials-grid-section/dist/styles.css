@@ -21,23 +21,18 @@ body {
 .container {
   width: 90%;
   margin: 4.375rem auto;
-  display: -ms-grid;
-  display: grid;
-  gap: 1.5rem;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 20% 20% 20% 20%;
-      grid-template-rows: 20% 20% 20% 20%;
-      grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira";
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (min-width: 64em) {
   .container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 80%;
     margin: 10.125rem auto;
+    gap: 1.5rem;
     -ms-grid-columns: 25% 25% 25% 25%;
         grid-template-columns: 25% 25% 25% 25%;
     -ms-grid-rows: 50% 50%;
@@ -48,6 +43,13 @@ body {
 
 .container article {
   border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 64em) {
+  .container article {
+    margin-bottom: 0;
+  }
 }
 
 .container article .testimony {
@@ -99,22 +101,16 @@ body {
   background-image: url("../../images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position-x: right;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: daniel;
 }
 
 #jonathan {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: jonathan;
   background-color: #48556a;
 }
 
 #jeanette {
   background-color: white;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: jeanette;
 }
 
@@ -136,15 +132,11 @@ body {
 
 #patrick {
   background-color: #19212e;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: patrick;
 }
 
 #kira {
   background-color: white;
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
   grid-area: kira;
 }
 
