@@ -6,6 +6,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 20% 20% 20% 20%;
   grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira";
+  justify-content: center;
 
   @include breakpoint-up(large) {
     width: 80%;

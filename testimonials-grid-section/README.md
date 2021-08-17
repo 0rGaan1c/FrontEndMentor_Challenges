@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://github.com/0rGaan1c/FrontEndMentor_Challenges/tree/main/testimonials-grid-section)
+- [Live Site URL](https://testimonials-grid-section-organic1.netlify.app/)
 
 ### Screenshot
 

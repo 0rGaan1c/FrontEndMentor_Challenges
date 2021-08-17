@@ -29,6 +29,9 @@ body {
   -ms-grid-rows: 20% 20% 20% 20%;
       grid-template-rows: 20% 20% 20% 20%;
       grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 64em) {
