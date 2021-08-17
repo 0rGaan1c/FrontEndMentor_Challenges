@@ -1,0 +1,135 @@
+.container {
+  width: 90%;
+  margin: 4.375rem auto;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 20% 20% 20%;
+  grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira";
+
+  @include breakpoint-up(large) {
+    width: 80%;
+    margin: 10.125rem auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+  }
+
+  article {
+    border-radius: 8px;
+
+    .testimony {
+      padding: 20px;
+
+      .user {
+        display: flex;
+        text-align: center;
+
+        .user-info {
+          font-size: 0.813rem;
+          margin-top: 4px;
+          margin-left: 6px;
+          .user-name {
+            color: white;
+            margin: 0;
+          }
+          .verified {
+            color: rgba(255, 255, 255, 0.5);
+            margin: 0;
+            margin-top: 4px;
+          }
+        }
+
+        .user-img > img {
+          width: 70%;
+          border-radius: 50%;
+        }
+      }
+
+      .review-heading {
+        color: white;
+        letter-spacing: 0.5;
+        font-size: 1.4rem;
+      }
+
+      .review-content {
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+#daniel {
+  background-color: $moderateViolet;
+  background-image: url("../../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  grid-area: daniel;
+}
+
+#jonathan {
+  grid-area: jonathan;
+  background-color: $veryDarkGrayishBlue;
+}
+
+#jeanette {
+  background-color: white;
+  grid-area: jeanette;
+
+  .testimony {
+    .user {
+      .user-info {
+        .user-name {
+          color: $veryDarkBlackishBlue;
+        }
+        .verified {
+          color: hsla(219, 29%, 14%, 0.5);
+        }
+      }
+    }
+
+    .review-heading {
+      color: $veryDarkBlackishBlue;
+    }
+
+    .review-content {
+      color: hsla(219, 29%, 14%, 0.7);
+    }
+  }
+}
+
+#patrick {
+  background-color: $veryDarkBlackishBlue;
+  grid-area: patrick;
+}
+
+#kira {
+  background-color: white;
+  grid-area: kira;
+
+  // there is probably a better way to do this rather than
+  // just copy pasting it.
+  .testimony {
+    .user {
+      .user-info {
+        .user-name {
+          color: $veryDarkBlackishBlue;
+        }
+        .verified {
+          color: hsla(219, 29%, 14%, 0.5);
+        }
+      }
+    }
+
+    .review-heading {
+      color: $veryDarkBlackishBlue;
+    }
+
+    .review-content {
+      color: hsla(219, 29%, 14%, 0.7);
+    }
+  }
+}
