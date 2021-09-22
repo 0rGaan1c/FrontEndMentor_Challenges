@@ -89,7 +89,7 @@ body {
 
 .creations {
   width: 95%;
-  margin: auto;
+  margin: auto auto 7.75rem;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -108,11 +108,46 @@ body {
   text-transform: uppercase;
   font-size: 2rem;
   color: white;
-  padding: 60px 20px 20px 20px;
-  width: 35%;
+  padding: 3.75rem 1.25rem 1.25rem 1.25rem;
+  width: 52%;
 }
 
 .creations__deep-earth {
   background-image: url("../../images/mobile/image-deep-earth.jpg");
+}
+
+.creations__night-arcade {
+  background-image: url("../../images/mobile/image-night-arcade.jpg");
+}
+
+.creations__soccer-team {
+  background-image: url("../../images/mobile/image-soccer-team.jpg");
+}
+
+.creations__the-grid {
+  background-image: url("../../images/mobile/image-grid.jpg");
+}
+
+.creations__pocket {
+  background-image: url("../../images/mobile/image-pocket-borealis.jpg");
+}
+
+.creations__curiosity {
+  background-image: url("../../images/mobile/image-curiosity.jpg");
+}
+
+.creations__fisheye {
+  background-image: url("../../images/mobile/image-fisheye.jpg");
+}
+
+.creations__button {
+  text-transform: uppercase;
+  font-family: "Alata", sans-serif;
+  letter-spacing: 4px;
+  border: 2px solid black;
+  padding: 6px;
+  width: 40%;
+  margin: auto;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
