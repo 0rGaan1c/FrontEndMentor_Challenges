@@ -1,0 +1,27 @@
+.creations {
+  width: 95%;
+  margin: auto;
+  font-family: $josefinSans;
+
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  &__div {
+    background-size: cover;
+    p {
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: $white;
+      padding: 60px 20px 20px 20px;
+      width: 35%;
+    }
+  }
+
+  &__deep-earth {
+    background-image: url("../../images/mobile/image-deep-earth.jpg");
+  }
+}

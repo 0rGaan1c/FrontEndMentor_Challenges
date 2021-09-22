@@ -28,34 +28,59 @@
 </head>
 
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
 
-  Immersive experiences that deliver
+  <section class="hero">
+    <nav class="hero__mobile-nav">
+      <img src="images/logo.svg" alt="logo">
+      <img src="images/icon-hamburger.svg" alt="hamburger">
+    </nav>
+    <nav class="hero__desktop-nav">
+      <ul>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Support</li>
+      </ul>
+    </nav>
+    <div class="hero__box">
+      <h1 class="hero__heading">Immersive experiences that deliver</h1>
+    </div>
+  </section>
 
-  The leader in interactive VR
+  <section class="leader">
+    <picture>
+      <source media="(min-width: 640px)" srcset="/images/desktop/image-interactive.jpg">
+      <img src="images/mobile/image-interactive.jpg">
+    </picture>
+    <div class="leader__text">
+      <h2>The leader in interactive VR</h2>
+      <p>
+        Founded in 2011, Loopstudios has been producing world-class virtual reality
+        projects for some of the best companies around the globe. Our award-winning
+        creations have transformed businesses through digital experiences that bind
+        to their brand.
+      </p>
+    </div>
+  </section>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality
-  projects for some of the best companies around the globe. Our award-winning
-  creations have transformed businesses through digital experiences that bind
-  to their brand.
+  <section class="creations">
 
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
+    <!-- <div> -->
+    <h2>Our creations</h2>
+    <!-- <div class="creations__desktop-see-all">See all</div> -->
+    <!-- </div> -->
+    <div class="creations__div creations__deep-earth">
+      <p>Deep earth</p>
+    </div>
+    Night arcade
+    Soccer team VR
+    The grid
+    From up above VR
+    Pocket borealis
+    The curiosity
+    Make it fisheye
+  </section>
   About
   Careers
   Events
@@ -68,6 +93,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/0rGaan1c">0rGaan1c</a>.
   </div>
+  <script src="app/js/script.js"></script>
 </body>
 
 </html>
