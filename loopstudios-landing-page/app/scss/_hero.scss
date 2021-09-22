@@ -8,14 +8,15 @@
     width: 95%;
     justify-content: space-between;
     margin: auto;
-    padding: 2.625rem 0;
+    padding: 2rem 0;
   }
 
   &__box {
     width: 95%;
     margin: auto;
     text-transform: uppercase;
-    padding: 7.625rem 0;
+    padding: 7.624rem 0;
+    // padding-bottom: calc(100% * 2 / 3);
 
     h1 {
       color: $white;
@@ -23,7 +24,7 @@
       font-weight: 100;
       font-size: 2.625rem;
       border: 2px solid white;
-      padding: 20px;
+      padding: 1.875rem;
       letter-spacing: 1.5px;
     }
   }

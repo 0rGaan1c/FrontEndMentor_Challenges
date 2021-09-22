@@ -1,0 +1,23 @@
+.footer {
+  background-color: $black;
+  font-family: $alata;
+  text-align: center;
+  color: $white;
+  padding: 3.125rem 0;
+
+  &__links {
+    div {
+      margin: 1.875rem auto;
+    }
+  }
+
+  &__icons-copyright {
+    img {
+      padding: 0.625rem;
+    }
+
+    p {
+      color: $darkGray;
+    }
+  }
+}

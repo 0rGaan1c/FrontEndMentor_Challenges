@@ -33,14 +33,14 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto;
-  padding: 2.625rem 0;
+  padding: 2rem 0;
 }
 
 .hero__box {
   width: 95%;
   margin: auto;
   text-transform: uppercase;
-  padding: 7.625rem 0;
+  padding: 7.624rem 0;
 }
 
 .hero__box h1 {
@@ -49,7 +49,7 @@ body {
   font-weight: 100;
   font-size: 2.625rem;
   border: 2px solid white;
-  padding: 20px;
+  padding: 1.875rem;
   letter-spacing: 1.5px;
 }
 
@@ -84,7 +84,19 @@ body {
 
 .leader p {
   font-family: "Alata", sans-serif;
-  color: dimgray;
+  color: #8c8c8c;
+}
+
+.attribution {
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 
 .creations {
@@ -149,5 +161,25 @@ body {
   width: 40%;
   margin: auto;
   text-align: center;
+}
+
+.footer {
+  background-color: black;
+  font-family: "Alata", sans-serif;
+  text-align: center;
+  color: white;
+  padding: 3.125rem 0;
+}
+
+.footer__links div {
+  margin: 1.875rem auto;
+}
+
+.footer__icons-copyright img {
+  padding: 0.625rem;
+}
+
+.footer__icons-copyright p {
+  color: #8c8c8c;
 }
 /*# sourceMappingURL=styles.css.map */
