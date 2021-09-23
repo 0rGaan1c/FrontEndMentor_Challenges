@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials grid section solution
 
-This is a solution to the [Loopstudios landing page challenge hub](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Loopstudios landing page challenge hub](https://www.frontendmentor.io/challenges/loopstjjudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/0rGaan1c/FrontEndMentor_Challenges/tree/main/loopstudios-landing-page)
-- [Live Site URL]()
+- [Live Site URL](https://loopstudios-landing-page-organic.netlify.app/)
 
 ### Screenshot
 
