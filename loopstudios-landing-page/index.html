@@ -21,9 +21,23 @@
   <section class="hero">
     <nav class="hero__mobile-nav">
       <img src="images/logo.svg" alt="logo">
-      <img src="images/icon-hamburger.svg" alt="hamburger">
+      <img id="hamburger" src="images/icon-hamburger.svg" alt="hamburger">
     </nav>
+    <div id="mobile-menu" class="hero__mobile-menu">
+      <div class="hero__mobile-menu__logos">
+        <img src="images/logo.svg" alt="logo">
+        <img id="close" src="images/icon-close.svg" alt="close">
+      </div>
+      <div class="hero__mobile-menu__links">
+        <div>About</div>
+        <div>Careers</div>
+        <div>Events</div>
+        <div>Products</div>
+        <div>Support</div>
+      </div>
+    </div>
     <nav class="hero__desktop-nav">
+      <img src="images/logo.svg" alt="logo">
       <ul>
         <li>About</li>
         <li>Careers</li>
@@ -55,30 +69,33 @@
 
   <section class="creations">
 
-    <!-- <div> -->
-    <h2>Our creations</h2>
-    <!-- <div class="creations__desktop-see-all">See all</div> -->
-    <!-- </div> -->
+    <div class="creations__desktop-heading">
+      <h2>Our creations</h2>
+      <div class="creations__desktop-heading__see-all">See all</div>
+    </div>
     <div class="creations__creation-list">
-      <div class="creations__div creations__deep-earth">
+      <div class="creations__creation-list__div creations__deep-earth">
         <p>Deep earth</p>
       </div>
-      <div class="creations__div creations__night-arcade">
+      <div class="creations__creation-list__div creations__night-arcade">
         <p>Night arcade</p>
       </div>
-      <div class="creations__div creations__soccer-team">
+      <div class="creations__creation-list__div creations__soccer-team">
         <p>Soccer team vr</p>
       </div>
-      <div class="creations__div creations__the-grid">
+      <div class="creations__creation-list__div creations__the-grid">
         <p>the grid</p>
       </div>
-      <div class="creations__div creations__pocket">
+      <div class="creations__creation-list__div creations__up-above">
+        <p>from up above vr</p>
+      </div>
+      <div class="creations__creation-list__div creations__pocket">
         <p>pocket borealis</p>
       </div>
-      <div class="creations__div creations__curiosity">
+      <div class="creations__creation-list__div creations__curiosity">
         <p>the curiosity</p>
       </div>
-      <div class="creations__div creations__fisheye">
+      <div class="creations__creation-list__div creations__fisheye">
         <p>make it fisheye</p>
       </div>
     </div>

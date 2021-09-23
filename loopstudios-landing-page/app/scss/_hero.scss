@@ -2,6 +2,10 @@
   background-image: url("../../images/mobile/image-hero.jpg");
   background-size: cover;
 
+  @include breakpoint-up(large) {
+    background-image: url("../../images/desktop/image-hero.jpg");
+  }
+
   &__mobile-nav {
     display: flex;
     align-items: center;
@@ -9,6 +13,48 @@
     justify-content: space-between;
     margin: auto;
     padding: 2rem 0;
+
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+
+  &__mobile-menu {
+    background-color: $black;
+    padding: 2rem 0 7.35rem 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: $white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 300ms ease-in-out;
+
+    &__logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 95%;
+      margin: auto;
+    }
+
+    &__links {
+      width: 95%;
+      margin: auto;
+      font-family: $josefinSans;
+      font-size: 1.75rem;
+      text-transform: uppercase;
+      margin-top: 7.5rem;
+      div {
+        padding: 1.25rem 1rem;
+      }
+    }
+  }
+
+  &__mobile-menu-show {
+    opacity: 1;
+    visibility: visible;
   }
 
   &__box {
@@ -18,6 +64,11 @@
     padding: 7.624rem 0;
     // padding-bottom: calc(100% * 2 / 3);
 
+    @include breakpoint-up(large) {
+      padding: 6rem 0;
+      width: 85%;
+    }
+
     h1 {
       color: $white;
       font-family: $josefinSans;
@@ -26,10 +77,57 @@
       border: 2px solid white;
       padding: 1.875rem;
       letter-spacing: 1.5px;
+
+      @include breakpoint-up(large) {
+        width: 45%;
+        font-size: 4rem;
+      }
     }
   }
 
   &__desktop-nav {
     display: none;
+
+    @include breakpoint-up(large) {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 0;
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        font-family: $alata;
+        color: $white;
+        font-size: 0.875rem;
+
+        li {
+          padding: 1rem;
+          cursor: pointer;
+          position: relative;
+
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 3px;
+            transform: scaleX(0);
+            background-color: white;
+            transition: transform 0.3s;
+          }
+
+          &:hover {
+            &:after {
+              transform: scaleX(0.8);
+            }
+          }
+        }
+      }
+    }
   }
 }

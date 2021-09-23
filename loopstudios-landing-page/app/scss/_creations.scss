@@ -3,51 +3,125 @@
   margin: auto auto 7.75rem;
   font-family: $josefinSans;
 
-  h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 100;
+  @include breakpoint-up(large) {
+    width: 85%;
   }
 
-  &__div {
-    background-size: cover;
+  &__desktop-heading {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-    p {
+    h2 {
       text-transform: uppercase;
+      text-align: center;
       font-size: 2rem;
-      color: $white;
-      padding: 3.75rem 1.25rem 1.25rem 1.25rem;
-      width: 52%;
+      font-weight: 100;
+
+      @include breakpoint-up(large) {
+        font-size: 3rem;
+      }
+    }
+
+    &__see-all {
+      visibility: hidden;
+
+      @include breakpoint-up(large) {
+        visibility: visible;
+        text-transform: uppercase;
+        font-family: $alata;
+        letter-spacing: 4px;
+        border: 2px solid black;
+        padding: 0.5rem 1.25rem;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: black;
+          color: white;
+          transition: 100ms ease-in-out;
+        }
+      }
+    }
+  }
+
+  &__creation-list {
+    &__div {
+      height: 9.375rem;
+      background-size: cover;
+
+      p {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: $white;
+        padding: 5rem 1.25rem 1.25rem 1.25rem;
+        width: 50%;
+      }
     }
   }
 
   &__deep-earth {
     background-image: url("../../images/mobile/image-deep-earth.jpg");
+
+    @include breakpoint-up(large) {
+      background-image: url("../../images/desktop/image-deep-earth.jpg");
+    }
   }
 
   &__night-arcade {
     background-image: url("../../images/mobile/image-night-arcade.jpg");
+
+    @include breakpoint-up(large) {
+      background-image: url("../../images/desktop/image-night-arcade.jpg");
+    }
   }
 
   &__soccer-team {
     background-image: url("../../images/mobile/image-soccer-team.jpg");
+
+    @include breakpoint-up(large) {
+      background-image: url("../../images/desktop/image-soccer-team.jpg");
+    }
   }
 
   &__the-grid {
     background-image: url("../../images/mobile/image-grid.jpg");
+
+    @include breakpoint-up(large) {
+      background-image: url("../../images/desktop/image-grid.jpg");
+    }
+  }
+
+  &__up-above {
+    background-image: url("../../images/mobile/image-from-above.jpg");
+
+    @include breakpoint-up(large) {
+      background-image: url("../../images/desktop/image-from-above.jpg");
+    }
   }
 
   &__pocket {
     background-image: url("../../images/mobile/image-pocket-borealis.jpg");
+
+    @include breakpoint-up(large) {
+      background-image: url("../../images/desktop/image-pocket-borealis.jpg");
+    }
   }
 
   &__curiosity {
     background-image: url("../../images/mobile/image-curiosity.jpg");
+    @include breakpoint-up(large) {
+      background-image: url("../../images/desktop/image-curiosity.jpg");
+    }
   }
 
   &__fisheye {
     background-image: url("../../images/mobile/image-fisheye.jpg");
+    @include breakpoint-up(large) {
+      background-image: url("../../images/desktop/image-fisheye.jpg");
+    }
   }
 
   &__button {
@@ -57,7 +131,11 @@
     border: 2px solid black;
     padding: 6px;
     width: 40%;
-    margin: auto;
+    margin: 2rem auto;
     text-align: center;
+
+    @include breakpoint-up(large) {
+      display: none;
+    }
   }
 }

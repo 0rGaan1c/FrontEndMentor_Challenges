@@ -1,0 +1,52 @@
+.leader {
+  width: 95%;
+  margin: 6.5rem auto;
+
+  @include breakpoint-up(large) {
+    display: flex;
+    width: 85%;
+  }
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  &__text {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+
+    @include breakpoint-up(large) {
+      z-index: 1;
+      margin-left: -7.5rem;
+      margin-bottom: 0;
+      background-color: white;
+      width: 45%;
+      text-align: left;
+      padding: 2.5rem 0 0 6.25rem;
+    }
+  }
+
+  h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    font-family: $josefinSans;
+
+    @include breakpoint-up(large) {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    font-family: $alata;
+    color: $veryDarkGray;
+    color: $darkGray;
+
+    @include breakpoint-up(large) {
+      line-height: 1.5;
+    }
+  }
+}
