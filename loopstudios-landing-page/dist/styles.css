@@ -246,7 +246,7 @@ body {
 
 .creations {
   width: 95%;
-  margin: auto auto 7.75rem;
+  margin: auto auto 7.75rem auto;
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -310,7 +310,7 @@ body {
   position: relative;
   height: 9.375rem;
   background-size: cover;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   cursor: pointer;
   color: white;
 }
@@ -353,12 +353,10 @@ body {
         grid-template-columns: 25% 25% 25% 25%;
     -ms-grid-rows: 50% 50%;
         grid-template-rows: 50% 50%;
+    justify-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
         grid-template-areas: "deep-earth night-arcade soccer-team the-grid" "up-above pocket curiosity fisheye";
   }
 }
@@ -549,28 +547,6 @@ footer .footer__links div:hover:after {
 footer .footer__icons-copyright img {
   padding: 0.625rem;
   cursor: pointer;
-}
-
-footer .footer__icons-copyright img:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 3px;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  background-color: white;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-}
-
-footer .footer__icons-copyright img:hover:after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
 }
 
 footer .footer__icons-copyright p {

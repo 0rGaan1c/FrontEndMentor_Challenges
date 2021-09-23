@@ -1,6 +1,6 @@
 .creations {
   width: 95%;
-  margin: auto auto 7.75rem;
+  margin: auto auto 7.75rem auto;
   font-family: $josefinSans;
 
   @include breakpoint-up(large) {
@@ -52,7 +52,7 @@
       position: relative;
       height: 9.375rem;
       background-size: cover;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       cursor: pointer;
       color: $white;
 
@@ -83,11 +83,10 @@
 
     @include breakpoint-up(large) {
       display: grid;
-      // gap: 2rem;
       grid-template-columns: 25% 25% 25% 25%;
       grid-template-rows: 50% 50%;
+      justify-items: center;
       justify-content: space-between;
-      align-items: center;
       grid-template-areas:
         "deep-earth night-arcade soccer-team the-grid"
         "up-above pocket curiosity fisheye";
