@@ -307,20 +307,65 @@ body {
 }
 
 .creations__creation-list__div {
+  position: relative;
   height: 9.375rem;
   background-size: cover;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media (min-width: 64em) {
+  .creations__creation-list__div {
+    height: 27.625rem;
+    width: 16.25rem;
+  }
 }
 
 .creations__creation-list__div p {
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: white;
-  padding: 5rem 1.25rem 1.25rem 1.25rem;
   width: 50%;
+  position: absolute;
+  bottom: 3%;
+  left: 5%;
+}
+
+@media (min-width: 64em) {
+  .creations__creation-list__div p {
+    left: 7%;
+  }
+}
+
+.creations__creation-list__div:hover {
+  -webkit-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(140, 140, 140, 0.7);
+          box-shadow: inset 0 0 0 1000px rgba(140, 140, 140, 0.7);
+  color: black;
+}
+
+@media (min-width: 64em) {
+  .creations__creation-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+        grid-template-areas: "deep-earth night-arcade soccer-team the-grid" "up-above pocket curiosity fisheye";
+  }
 }
 
 .creations__deep-earth {
   background-image: url("../../images/mobile/image-deep-earth.jpg");
+  grid-area: deep-earth;
 }
 
 @media (min-width: 64em) {
@@ -331,6 +376,7 @@ body {
 
 .creations__night-arcade {
   background-image: url("../../images/mobile/image-night-arcade.jpg");
+  grid-area: night-arcade;
 }
 
 @media (min-width: 64em) {
@@ -341,6 +387,7 @@ body {
 
 .creations__soccer-team {
   background-image: url("../../images/mobile/image-soccer-team.jpg");
+  grid-area: soccer-team;
 }
 
 @media (min-width: 64em) {
@@ -351,6 +398,7 @@ body {
 
 .creations__the-grid {
   background-image: url("../../images/mobile/image-grid.jpg");
+  grid-area: the-grid;
 }
 
 @media (min-width: 64em) {
@@ -361,6 +409,7 @@ body {
 
 .creations__up-above {
   background-image: url("../../images/mobile/image-from-above.jpg");
+  grid-area: up-above;
 }
 
 @media (min-width: 64em) {
@@ -371,6 +420,7 @@ body {
 
 .creations__pocket {
   background-image: url("../../images/mobile/image-pocket-borealis.jpg");
+  grid-area: pocket;
 }
 
 @media (min-width: 64em) {
@@ -381,6 +431,7 @@ body {
 
 .creations__curiosity {
   background-image: url("../../images/mobile/image-curiosity.jpg");
+  grid-area: curiosity;
 }
 
 @media (min-width: 64em) {
@@ -391,6 +442,7 @@ body {
 
 .creations__fisheye {
   background-image: url("../../images/mobile/image-fisheye.jpg");
+  grid-area: fisheye;
 }
 
 @media (min-width: 64em) {
@@ -416,23 +468,118 @@ body {
   }
 }
 
-.footer {
+footer {
   background-color: black;
+}
+
+footer .footer {
   font-family: "Alata", sans-serif;
   text-align: center;
   color: white;
   padding: 3.125rem 0;
 }
 
-.footer__links div {
+@media (min-width: 64em) {
+  footer .footer {
+    width: 85%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+}
+
+footer .footer__links div {
   margin: 1.875rem auto;
+  cursor: pointer;
+  position: relative;
 }
 
-.footer__icons-copyright img {
+footer .footer__links div:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: white;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+footer .footer__links div:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+@media (min-width: 64em) {
+  footer .footer__links div {
+    margin-right: 1.875rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  footer .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 64em) {
+  footer .footer__icons-copyright {
+    text-align: right;
+  }
+}
+
+footer .footer__icons-copyright img {
   padding: 0.625rem;
+  cursor: pointer;
 }
 
-.footer__icons-copyright p {
+footer .footer__icons-copyright img:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  background-color: white;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+footer .footer__icons-copyright img:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+footer .footer__icons-copyright p {
   color: #8c8c8c;
+}
+
+.attribution {
+  text-align: center;
+  font-family: "Alata", sans-serif;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

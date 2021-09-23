@@ -49,21 +49,54 @@
 
   &__creation-list {
     &__div {
+      position: relative;
       height: 9.375rem;
       background-size: cover;
+      margin-bottom: 2rem;
+      cursor: pointer;
+      color: $white;
+
+      @include breakpoint-up(large) {
+        height: 27.625rem;
+        width: 16.25rem;
+      }
 
       p {
         text-transform: uppercase;
         font-size: 1.5rem;
-        color: $white;
-        padding: 5rem 1.25rem 1.25rem 1.25rem;
         width: 50%;
+        position: absolute;
+        bottom: 3%;
+        left: 5%;
+
+        @include breakpoint-up(large) {
+          left: 7%;
+        }
       }
+
+      &:hover {
+        transition: 100ms ease-in-out;
+        box-shadow: inset 0 0 0 1000px hsla(0, 0%, 55%, 0.7);
+        color: $black;
+      }
+    }
+
+    @include breakpoint-up(large) {
+      display: grid;
+      // gap: 2rem;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 50% 50%;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-areas:
+        "deep-earth night-arcade soccer-team the-grid"
+        "up-above pocket curiosity fisheye";
     }
   }
 
   &__deep-earth {
     background-image: url("../../images/mobile/image-deep-earth.jpg");
+    grid-area: deep-earth;
 
     @include breakpoint-up(large) {
       background-image: url("../../images/desktop/image-deep-earth.jpg");
@@ -72,6 +105,7 @@
 
   &__night-arcade {
     background-image: url("../../images/mobile/image-night-arcade.jpg");
+    grid-area: night-arcade;
 
     @include breakpoint-up(large) {
       background-image: url("../../images/desktop/image-night-arcade.jpg");
@@ -80,6 +114,7 @@
 
   &__soccer-team {
     background-image: url("../../images/mobile/image-soccer-team.jpg");
+    grid-area: soccer-team;
 
     @include breakpoint-up(large) {
       background-image: url("../../images/desktop/image-soccer-team.jpg");
@@ -88,6 +123,7 @@
 
   &__the-grid {
     background-image: url("../../images/mobile/image-grid.jpg");
+    grid-area: the-grid;
 
     @include breakpoint-up(large) {
       background-image: url("../../images/desktop/image-grid.jpg");
@@ -96,6 +132,7 @@
 
   &__up-above {
     background-image: url("../../images/mobile/image-from-above.jpg");
+    grid-area: up-above;
 
     @include breakpoint-up(large) {
       background-image: url("../../images/desktop/image-from-above.jpg");
@@ -104,6 +141,7 @@
 
   &__pocket {
     background-image: url("../../images/mobile/image-pocket-borealis.jpg");
+    grid-area: pocket;
 
     @include breakpoint-up(large) {
       background-image: url("../../images/desktop/image-pocket-borealis.jpg");
@@ -112,6 +150,8 @@
 
   &__curiosity {
     background-image: url("../../images/mobile/image-curiosity.jpg");
+    grid-area: curiosity;
+
     @include breakpoint-up(large) {
       background-image: url("../../images/desktop/image-curiosity.jpg");
     }
@@ -119,6 +159,8 @@
 
   &__fisheye {
     background-image: url("../../images/mobile/image-fisheye.jpg");
+    grid-area: fisheye;
+
     @include breakpoint-up(large) {
       background-image: url("../../images/desktop/image-fisheye.jpg");
     }
